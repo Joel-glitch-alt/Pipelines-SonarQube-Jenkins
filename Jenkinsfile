@@ -43,6 +43,8 @@ pipeline {
 
         stage('Unit Test') {
             steps {
+                sh 'npm install'
+                sh 'chmod +x ./node_modules/.bin/jest'
                 sh 'npx jest --passWithNoTests'
             }
         }
