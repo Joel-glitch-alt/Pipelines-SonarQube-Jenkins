@@ -12,7 +12,7 @@ pipeline {
                 git credentialsId: 'jenkins-git-dind', url: 'https://github.com/Joel-glitch-alt/Pipelines-SonarQube-Jenkins.git'
             }
         }
-        stage('Test') {
+        stage('Unit Test') {
             steps {
                 sh 'npm test'
             }
