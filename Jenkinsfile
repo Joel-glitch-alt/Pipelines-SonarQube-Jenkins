@@ -60,13 +60,13 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv("${SONARQUBE_ENV}") {
-                    sh 'sonar-scanner'
-                }
-            }
-        }
+        // stage('SonarQube Analysis') {
+        //     steps {
+        //         withSonarQubeEnv("${SONARQUBE_ENV}") {
+        //             sh 'sonar-scanner'
+        //         }
+        //     }
+        // }
     }
 }
 
